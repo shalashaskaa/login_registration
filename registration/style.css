@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Nunito";
+}
+body{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background:linear-gradient(100deg,#de6262, #ffb88c)
+}
+.container{
+    max-width:500px;
+    width:100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    position: relative;
+    left:130px;
+    font-size: calc( 1em + 7vmin );
+    font-weight: 900;
+    color: tomato;
+  
+    --x-offset: -0.0125em;
+    --y-offset: 0.0425em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+
+     text-shadow: 
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+}
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+form .user-details .input-box{
+    margin-bottom:15px;
+    width: calc(100% / 2 - 1px);
+}
+form .user-details .input-box .details{
+    display:block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+form .user-details .input-box input{
+    height: 45px;
+    width:100%;
+    outline:none ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+}
+form .user-details .input-box input:valid{
+    border-color: #6dd5ed;
+}
+form .button{
+    height: 30px;
+    margin: 30px ;
+    position:relative;
+    left:95px;
+
+    
+}
+form .button input{
+    height: 100%;
+    width: 50%;
+    color:#fff;
+    background:linear-gradient(100deg,#de6262, #ffb88c);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+}
+form .button input:hover{
+    cursor: pointer;
+    background:black;
+    
+}
+
